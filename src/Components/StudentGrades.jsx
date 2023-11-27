@@ -8,10 +8,11 @@ function StudentGrades(props) {
   const [grade2, setGrade2] = useState()
   const [grade3, setGrade3] = useState()
   const [gradeTot, setTotal] = useState()
-  const studentCount = useRef(1)
+  const studentCount = useRef(new studentArr())
   let total
   let avg
   let grade
+
 
 
 function handleClick(){
@@ -27,9 +28,6 @@ function handleClick(){
   else grade = 'F'
 
   setTotal(grade)
-
-
-
 }
 
 
@@ -48,6 +46,7 @@ function handleClick(){
       </div><br></br>
       <button onClick={handleClick}>Calculate Total Grade</button>
       <div>{name} grade is {gradeTot}</div>
+
   </div>
 )
 }
