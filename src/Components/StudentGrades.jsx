@@ -8,7 +8,6 @@ function StudentGrades(props) {
   const [grade2, setGrade2] = useState()
   const [grade3, setGrade3] = useState()
   const [gradeTot, setTotal] = useState()
-  const studentCount = useRef(new studentArr())
   let total
   let avg
   let grade
